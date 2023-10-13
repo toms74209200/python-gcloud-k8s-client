@@ -1,9 +1,12 @@
 name: Build and upload image
 
 on:
-  create:
+  push:
     tags:
       - "*"
+  workflow_run:
+    workflows: ["Pull Request(Dependabot)"]
+    types: ["completed"]
 
 jobs:
   build:
