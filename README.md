@@ -59,9 +59,9 @@ services:
 
 ## Installed packages
 
-- [google-cloud-logging](https://pypi.org/project/google-cloud-logging/): 3.5.*
+- [google-cloud-logging](https://pypi.org/project/google-cloud-logging/)
 
-- [kubernetes](https://pypi.org/project/kubernetes/): 26.1.*
+- [kubernetes](https://pypi.org/project/kubernetes/)
 
 ## Reference
 
