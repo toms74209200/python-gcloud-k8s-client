@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: fetch commits
-        run: ggit fetch --prune --unshallow
+        run: git fetch --prune --unshallow
       - name: get latest tag
         run: echo LATEST_TAG=`git describe --tags --abbrev=0` >> $GITHUB_ENV
       - name: set new tag
