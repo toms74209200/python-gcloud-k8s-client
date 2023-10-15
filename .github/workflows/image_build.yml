@@ -5,7 +5,7 @@ on:
     tags:
       - "*"
   workflow_run:
-    workflows: ["Pull Request(Dependabot)"]
+    workflows: ["Pull Request(Python Dependabot)"]
     types: ["completed"]
 
 jobs:
