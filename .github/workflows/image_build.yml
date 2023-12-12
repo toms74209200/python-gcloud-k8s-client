@@ -4,9 +4,8 @@ on:
   push:
     tags:
       - "*"
-  workflow_run:
-    workflows: ["Pull Request(Python Dependabot)"]
-    types: ["completed"]
+  schedule:
+    - cron: "0 21 * * 2"
 
 jobs:
   build:
