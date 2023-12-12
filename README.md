@@ -1,7 +1,9 @@
 # python-gcloud-k8s-client
 
-![version](https://img.shields.io/github/v/tag/toms74209200/python-gcloud-k8s-client)
-![status](https://github.com/toms74209200/python-gcloud-k8s-client/actions/workflows/image_build.yml/badge.svg)
+[![GitHub](https://img.shields.io/badge/GitHub-repository---)](https://github.com/toms74209200/python-gcloud-k8s-client)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub---?color=1D63ED)](https://hub.docker.com/r/motomotomato/python-gcloud-k8s-client)
+[![version](https://img.shields.io/github/v/tag/toms74209200/python-gcloud-k8s-client)](https://github.com/toms74209200/python-gcloud-k8s-client/tags)
+[![status](https://github.com/toms74209200/python-gcloud-k8s-client/actions/workflows/image_build.yml/badge.svg)](https://github.com/toms74209200/python-gcloud-k8s-client/actions/workflows/image_build.yml)
 
 Google Kubernetes Engine Python client Docker image.
 
@@ -10,13 +12,13 @@ This image is based on the official Python image and contains the Google Cloud S
 ## Usage
 
 ```bash
-$ docker pull ghcr.io/toms74209200/python-gcloud-k8s-client
+$ docker pull motomotomato/python-gcloud-k8s-client
 ```
 
 To run Python script, you can use CMD instruction in Dockerfile.
 
 ```dockerfile
-FROM ghcr.io/toms74209200/python-gcloud-k8s-client
+FROM motomotomato/python-gcloud-k8s-client
 
 ENV CLUSTER_NAME=cluster-name
 ENV REGION=region
@@ -44,7 +46,7 @@ By using docker-compose, you can use the service account file and environment va
 ```yaml
 services:
   python-gcloud-k8s-client:
-    image: ghcr.io/toms74209200/python-gcloud-k8s-client
+    image: motomotomato/python-gcloud-k8s-client
     volumes:
       - ./service-account.json:/service-account.json
       - ./main.py:/main.py
