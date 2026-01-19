@@ -1,2 +1,2 @@
 google-cloud-logging==3.13.*
-kubernetes==34.1.*
+kubernetes==35.0.*
